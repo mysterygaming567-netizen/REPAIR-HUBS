@@ -60,7 +60,7 @@
   border-radius: 8px;
 }
 .visual-note span {
-  color: rgba(255, 255, 255, 0.72);
+  color: white;
 }
 .login-form-area {
   display: flex;
