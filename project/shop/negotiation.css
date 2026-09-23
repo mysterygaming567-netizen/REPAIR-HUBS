@@ -1,0 +1,26 @@
+.deadline-review {
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  margin-top: 8px;
+}
+.deadline-review h4 {
+  margin-bottom: 8px;
+}
+.deadline-review form {
+  display: grid;
+  gap: 8px;
+}
+.deadline-review select,
+.deadline-review textarea {
+  width: 100%;
+  border: 1px solid #cbd4d1;
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+  padding: 9px;
+  font: 12px "DM Sans";
+  resize: vertical;
+}
+.deadline-review .button {
+  justify-self: start;
+}

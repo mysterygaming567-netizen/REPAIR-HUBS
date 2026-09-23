@@ -1,0 +1,30 @@
+.chat-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.chat-heading h4 {
+  margin-bottom: 0;
+}
+.chat-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 78px;
+  height: 30px;
+  padding: 0 13px;
+  border: 1px solid var(--orange);
+  background: #fff4ee;
+  color: var(--orange);
+  border-radius: 16px;
+  font: 600 10px "DM Sans";
+  cursor: pointer;
+}
+.chat-toggle:hover {
+  background: var(--orange);
+  color: #fff;
+}
+.chat-collapsed {
+  display: none;
+}

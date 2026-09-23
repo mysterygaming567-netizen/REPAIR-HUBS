@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "public": ".",
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/index/index.html",
+        "type": 301
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "cleanUrls": true
+  }
+}

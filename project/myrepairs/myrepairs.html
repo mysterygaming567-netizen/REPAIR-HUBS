@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My repairs — RepairHub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">R</div>
+      <div class="nav-links">
+        <a href="../dashboard/dashboard.html">Dashboard</a>
+        <a href="../find/find.html">Find repairman</a>
+        <a href="../submit/submit.html">Submit repair</a>
+        <a class="active" href="../myrepairs/myrepairs.html">My repairs</a>
+      </div>
+      <div class="spacer"></div>
+      <div class="profile" id="profileName">User</div><span class="notification" id="chatNotification" hidden>0 new chat</span>
+      <a href="#" id="logoutLink" class="logout">Log out</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="my-repairs">
+      <div class="container">
+        <h1>My repairs</h1>
+        <div id="repairsList"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

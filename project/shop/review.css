@@ -1,0 +1,235 @@
+.calendar {
+  display: block;
+}
+.detail-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+}
+.detail-heading h3 {
+  margin: 0 0 7px;
+}
+.close-button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+.review-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  gap: 24px;
+  margin-top: 18px;
+}
+.review-grid h4 {
+  margin: 0 0 7px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+.review-grid p {
+  margin: 0 0 18px;
+}
+.review-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-left: 1px solid var(--line);
+  padding-left: 20px;
+}
+.review-controls label {
+  font-size: 12px;
+}
+.review-controls select {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  padding: 9px;
+  border: 1px solid #cbd4d1;
+  border-radius: 6px;
+  background: #fff;
+  color: var(--ink);
+}
+.review-controls .button {
+  align-self: flex-start;
+}
+.media-review {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.media-review li {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+  font-size: 11px;
+}
+.media-review img,
+.media-review video {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 7px;
+  background: #e9efec;
+  border: 1px solid var(--line);
+}
+.media-review strong {
+  overflow-wrap: anywhere;
+}
+.media-review span {
+  color: var(--muted);
+}
+.media-review a {
+  color: var(--orange);
+  font-weight: 600;
+  padding: 14px 0;
+}
+.chat-thread {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.chat-message {
+  padding: 9px 11px;
+  border-radius: 8px;
+  background: #eef4f1;
+  max-width: 85%;
+  font-size: 12px;
+}
+.chat-message.from-shop {
+  background: #fff0e9;
+  margin-left: auto;
+}
+.chat-message strong {
+  font-size: 10px;
+  color: var(--muted);
+}
+.chat-message p {
+  margin: 3px 0 0 !important;
+}
+.chat-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.chat-form input {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid #cbd4d1;
+  border-radius: 6px;
+  padding: 9px;
+  font: 12px "DM Sans";
+}
+.calendar-actions {
+  display: flex;
+  gap: 6px;
+}
+.calendar-week,
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  width: 100%;
+}
+.calendar-week {
+  margin-bottom: 6px;
+}
+.calendar-week span {
+  text-align: center;
+  color: var(--muted);
+  font-size: 10px;
+}
+.calendar-grid {
+  grid-auto-rows: minmax(42px, 1fr);
+}
+.calendar-empty {
+  display: block;
+}
+.day {
+  min-width: 0;
+  border: 0;
+  border-radius: 7px;
+  background: #faf8f5;
+  color: var(--ink);
+  padding: 6px 3px;
+  cursor: pointer;
+  font: 11px "DM Sans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.day:hover {
+  outline: 1px solid var(--orange);
+}
+.day.today {
+  background: var(--navy);
+  color: #fff;
+}
+.day.booked {
+  background: #edf3ef;
+}
+.day.urgent {
+  background: #fff0e9;
+  color: var(--orange);
+}
+.day small {
+  font-size: 8px;
+  color: var(--muted);
+}
+.day.today small {
+  color: #dce9e2;
+}
+.inbox-item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border: 0;
+  background: none;
+  text-align: left;
+  padding: 10px 0;
+  color: inherit;
+  cursor: pointer;
+}
+.inbox-item:hover {
+  background: #faf8f5;
+}
+.inbox-item span {
+  display: grid;
+  gap: 3px;
+}
+.inbox-item small {
+  color: var(--muted);
+}
+@media (max-width: 700px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+  .review-controls {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 18px 0 0;
+  }
+  .media-review {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .calendar-grid {
+    gap: 3px;
+  }
+  .day {
+    font-size: 10px;
+    padding: 5px 1px;
+  }
+  .day small {
+    font-size: 7px;
+  }
+}

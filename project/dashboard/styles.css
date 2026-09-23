@@ -1,0 +1,463 @@
+:root {
+  --nav-bg: #17232d;
+  --accent: #e36b49;
+  --beige: #f1e7df;
+  --dark: #16222b;
+  --muted: #7b8a91;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Inter, system-ui, Arial, Helvetica, sans-serif;
+  margin: 0;
+  color: var(--dark);
+  background: var(--beige);
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.site-header {
+  background: var(--nav-bg);
+  color: #fff;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  height: 64px;
+}
+.brand {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.nav-links a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  opacity: 0.9;
+}
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+.spacer {
+  flex: 1;
+}
+.profile {
+  background: #e36b49;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+.logout {
+  color: #fff;
+  margin-left: 18px;
+  text-decoration: none;
+}
+h1 {
+  font-size: 48px;
+  line-height: 1.02;
+  margin: 0 0 18px;
+  color: #102231;
+}
+.muted {
+  color: rgba(255, 255, 255, 0.7);
+}
+.stats {
+  display: flex;
+  gap: 18px;
+  margin: 20px 0;
+}
+.stat-card {
+  flex: 1;
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.03);
+  text-align: center;
+}
+.stat-card .big {
+  font-size: 36px;
+  color: var(--accent);
+  font-weight: 700;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+.section-head h2 {
+  margin: 0;
+}
+.view-all {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+.cta-banner {
+  background: var(--nav-bg);
+  color: #fff;
+  border-radius: 16px;
+  padding: 26px;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cta-text h3 {
+  margin: 0 0 6px;
+}
+.cta-text p {
+  margin: 0;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 0;
+  font-weight: 600;
+}
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn.large {
+  padding: 12px 22px;
+  border-radius: 14px;
+}
+.repair-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+.badge {
+  background: #eef6ff;
+  padding: 6px 10px;
+  border-radius: 12px;
+  color: #1b61a8;
+  font-weight: 600;
+}
+.progress {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+.step {
+  flex: 1;
+  text-align: center;
+}
+.step span {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  line-height: 28px;
+}
+.step.done span {
+  background: green;
+  color: #fff;
+}
+.step.active span {
+  background: var(--accent);
+  color: #fff;
+}
+.step .label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.meta-row {
+  display: flex;
+  gap: 24px;
+  margin-top: 12px;
+  color: var(--muted);
+}
+.messages {
+  margin-top: 12px;
+}
+.msg {
+  padding: 12px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.msg.from-shop {
+  background: #f6efe8;
+}
+.msg.from-user {
+  background: #16222b;
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .stats {
+    flex-direction: column;
+  }
+  .cta-banner {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
+
+:root {
+  --nav-bg: #1e2d3e;
+  --accent: #e06640;
+  --beige: #f5ede3;
+  --dark: #1e2d3e;
+  --muted: #7f8ba0;
+}
+body {
+  font-family: Inter, sans-serif;
+  background: var(--beige);
+  color: var(--dark);
+}
+h1,
+h2,
+h3 {
+  font-family: Outfit, sans-serif;
+}
+.site-header {
+  height: 54px;
+  background: var(--nav-bg);
+}
+.nav {
+  height: 54px;
+}
+.brand {
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.nav-links a {
+  font-size: 12px;
+  margin: 0 3px;
+  padding: 7px 10px;
+}
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.12);
+}
+.profile {
+  font-size: 11px;
+  padding: 5px 0;
+  background: var(--accent);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  overflow: hidden;
+}
+.logout {
+  font-size: 11px;
+  margin-left: 10px;
+  color: rgba(255, 255, 255, 0.5);
+}
+h1 {
+  font:
+    700 24px/1.15 Outfit,
+    sans-serif;
+  margin: 0 0 3px;
+}
+.dashboard {
+  padding: 30px 0;
+}
+.dashboard .sub {
+  font-size: 13px;
+  color: #7f8ba0;
+  margin: 0;
+}
+.container {
+  max-width: 900px;
+}
+.stats {
+  gap: 12px;
+  margin: 27px 0 30px;
+}
+.stat-card {
+  padding: 16px;
+  border-radius: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.stat-card .big {
+  font:
+    700 28px Outfit,
+    sans-serif;
+}
+.stat-card div:last-child {
+  font-size: 11px;
+  color: #8c98aa;
+}
+.section-head {
+  margin-bottom: 12px;
+}
+.section-head h2 {
+  font-size: 16px;
+}
+.view-all {
+  font-size: 11px;
+}
+.repair-card {
+  padding: 18px 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+.repair-card h3 {
+  font-size: 14px;
+  margin: 0;
+}
+.small {
+  font-size: 10px;
+  color: #8c98aa;
+}
+.badge {
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #dceaff;
+  color: #2663d5;
+}
+.progress {
+  gap: 10px;
+  margin: 15px 0;
+}
+.step span {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 11px;
+}
+.step .label {
+  font-size: 9px;
+}
+.meta-row {
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  padding-top: 8px;
+  justify-content: space-between;
+  font-size: 10px;
+}
+.meta-row strong {
+  color: var(--dark);
+  font-size: 11px;
+}
+.messages {
+  display: none;
+}
+.cta-banner {
+  margin-top: 28px;
+  padding: 22px;
+  border-radius: 14px;
+}
+.cta-text h3 {
+  font-size: 16px;
+}
+.cta-text p {
+  font-size: 12px;
+}
+.btn.large {
+  font-size: 12px;
+  padding: 11px 18px;
+}
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+  }
+  .nav {
+    width: 100%;
+    min-width: 0;
+  }
+  .dashboard {
+    padding-top: 24px;
+  }
+  .dashboard .container {
+    width: 100%;
+    min-width: 0;
+  }
+  .stats {
+    flex-direction: row;
+  }
+  .stat-card {
+    padding: 12px 4px;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .meta-row {
+    gap: 8px;
+  }
+  .meta-row > div {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .profile {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    padding: 5px 0;
+    font-size: 10px;
+  }
+  .logout {
+    margin-left: 4px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  h1 {
+    width: 100%;
+    max-width: 260px;
+    overflow-wrap: anywhere;
+  }
+  .repair-card {
+    min-width: 0;
+    padding: 14px 10px;
+  }
+  .repair-card > div:first-child {
+    min-width: 0;
+  }
+  .repair-card h3 {
+    overflow-wrap: anywhere;
+  }
+  .progress {
+    gap: 2px;
+  }
+  .step {
+    min-width: 0;
+  }
+  .step .label {
+    font-size: 8px;
+    overflow-wrap: anywhere;
+  }
+  .meta-row strong {
+    overflow-wrap: anywhere;
+  }
+  .cta-banner {
+    min-width: 0;
+  }
+  .cta-text {
+    min-width: 0;
+  }
+}
+.notification {
+  background: var(--accent);
+  color: #fff;
+  border-radius: 12px;
+  padding: 4px 7px;
+  font-size: 9px;
+  white-space: nowrap;
+  margin-left: 8px;
+  text-decoration: none;
+}
